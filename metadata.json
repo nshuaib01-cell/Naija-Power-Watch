@@ -1,0 +1,7 @@
+{
+  "name": "Naija Power Watch",
+  "description": "A professional-grade Nigerian Smart Grid monitoring system prototype for tracking outages and grid health.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

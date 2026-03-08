@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-nigeria-green: #008753;
+  --color-nigeria-green-dark: #006b42;
+  --color-nigeria-green-light: #e6f3ee;
+}
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-gray-200 shadow-sm rounded-2xl;
+}
+
+@keyframes map-pulse {
+  0% { r: 8; opacity: 0.4; }
+  50% { r: 15; opacity: 0.1; }
+  100% { r: 8; opacity: 0.4; }
+}
+
+.map-pulse {
+  animation: map-pulse 2s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
